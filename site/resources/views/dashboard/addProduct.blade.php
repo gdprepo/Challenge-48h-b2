@@ -47,6 +47,16 @@
                             <input class="form-control" type="text" name="image" id="image" placeholder="Entrer une image">
                         </div>
 
+                        <div class="form-group">
+                            <label>Autonomie</label>
+                            <input class="form-control" type="text" name="image" id="image" placeholder="Entrer une image">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Image</label>
+                            <input class="form-control" type="text" name="image" id="image" placeholder="Entrer une image">
+                        </div>
+
                         <button class="form-control" type="submit" class="btn btn-primary">Enregistrer</button>
 
                     </form>
