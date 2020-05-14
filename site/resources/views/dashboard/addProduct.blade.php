@@ -22,7 +22,10 @@
             
                 <div class="card-header">
                     Add Product 
-            
+                    <div class="top-right links" style="float: right">
+                        <a href="{{route('dashboard.product')}}">Retour</a>
+                    </div>
+
                 </div>
 
                 <div class="card-body">
