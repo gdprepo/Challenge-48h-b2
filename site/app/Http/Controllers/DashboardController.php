@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use App\Map;
 
 class DashboardController extends Controller
 {
@@ -47,6 +48,47 @@ class DashboardController extends Controller
         $product->save();
 
         return back()->withInfo('Product create');
+
+    }
+
+    function mapskate()
+    {
+        $maps = Map::all();
+
+        return view('dashboard.mapskate', ['maps' => $maps]);
+    }
+
+    function mapDelete($id)
+    {
+        $map = Map::find($id);
+        $map->delete();
+
+        return back()->withInfo('Delete');
+
+    }
+
+    function mapAdd()
+    {
+        return view('dashboard.addMap');
+    }
+
+    function mapCreate(Request $request)
+    {
+        $request->validate([
+            'title' => ['required'],
+            'long' => ['required'],
+            'lat' => ['required'],
+        ]);
+
+        $map = new MapÒ;
+
+        $map->title = $request->input('title');
+        $map->description = $request->input('lon');
+        $map->autonomie = $request->input('lat');
+        
+        $map->save();
+
+        return back()->withInfo('Map create');
 
     }
 }

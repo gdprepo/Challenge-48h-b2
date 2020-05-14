@@ -44,13 +44,14 @@
                         <a class="navbar-brand" href="/">Skate Bordeaux</a>
                         <a class="navbar-brand" href="{{route('Information.index')}}">Information</a>
                         <a class="navbar-brand" href="/Contact">Contactez-nous</a>
+
                         @auth
                             <a class="navbar-brand" href="/">Nos parkings</a>
                             <a class="navbar-brand" href="/mapskate">Skate pas loin</a>
                         @endauth
                         <div style="float :right" class="top-right links">
                         @auth
-                            <a href="{{ url('/home') }}">Home</a>
+                            <a href="{{ url('/') }}">Home</a>
                             <a href="{{ route('logout') }}">Disconnect</a>
                         @else
                             <a href="{{ route('login') }}">Login</a>
