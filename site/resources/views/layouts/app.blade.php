@@ -42,14 +42,8 @@
                         <div class="bg-light p-4">
                         <h4 class="text-black">SKAEL</h4>
                         <a class="navbar-brand" href="/">Skate Bordeaux</a>
-<<<<<<< HEAD
-                        <a class="navbar-brand" href="{{route('acheter.index')}}">Information</a>
-                        <a class="navbar-brand" href="/Contact">Contactez-nous</a>
-
-=======
                         <a class="navbar-brand" href="{{route('Information.index')}}">Information</a>
                         <a class="navbar-brand" href="/Contact">Contactez-nous</a>
->>>>>>> 0a35e07332631f2e3f1b48df821452da4b1312aa
                         @auth
                             <a class="navbar-brand" href="/">Nos parkings</a>
                             <a class="navbar-brand" href="/mapskate">Skate pas loin</a>
