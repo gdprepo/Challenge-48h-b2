@@ -19,7 +19,14 @@
     <div style="margin-top: 100px" class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">List</div>
+            
+                <div class="card-header">
+                    List 
+                    <div class="top-right links" style="float: right">
+                        <a href="{{route('product.add')}}">Ajouter</a>
+                    </div>
+                
+                </div>
 
                 <div class="card-body">
                         

@@ -20,4 +20,9 @@ class DashboardController extends Controller
 
         return view('dashboard.product');
     }
+
+    function productAdd()
+    {
+        return view('dashboard.addProduct');
+    }
 }
