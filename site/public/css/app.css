@@ -54,3 +54,12 @@ html, body {
 .m-b-md {
     margin-bottom: 30px;
 }
+
+.background{
+    height: 90vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center; 
+    align-items:center;
+}

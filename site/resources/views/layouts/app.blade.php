@@ -44,9 +44,9 @@
                         <a class="navbar-brand" href="/">Skate Bordeaux</a>
                         <a class="navbar-brand" href="{{route('acheter.index')}}">Information</a>
                         <a class="navbar-brand" href="/">Contactez-nous</a>
-                        <a class="navbar-brand" href="/">Nos magasins</a>
                         @auth
-                            <a class="navbar-brand" href="/">Commander</a>
+                            <a class="navbar-brand" href="/">Nos parkings</a>
+                            <a class="navbar-brand" href="/">Skate pas loin</a>
                         @endauth
                         <div style="float :right" class="top-right links">
                         @auth
