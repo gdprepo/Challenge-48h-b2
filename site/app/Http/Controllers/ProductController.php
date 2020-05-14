@@ -13,4 +13,5 @@ class ProductController extends Controller
 
         return view('acheter.index', ['products' => $products]);
     }
+
 }
