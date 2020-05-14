@@ -26,6 +26,7 @@ Route::get('/logout', 'HomeController@logout')->name('disconnect');
 
 
 Route::get('/acheter', 'ProductController@index')->name('acheter.index');
+Route::get('/acheter/show/{id}', 'ProductController@show')->name('acheter.show');
 Route::get('/inscription', 'ContactController@index')->name('contact.index');
 Route::get('/Information', 'InformationController@info')->name('Information.index');
 

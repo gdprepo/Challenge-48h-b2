@@ -46,11 +46,19 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
+<<<<<<< HEAD
+            'host' => env('DB_HOST', $_ENV["DB_HOST"]),
+            'port' => env('DB_PORT', $_ENV["DB_PORT"]),
+            'database' => env('DB_DATABASE', $_ENV["DB_DATABASE"]),
+            'username' => env('DB_USERNAME', $_ENV["DB_USERNAME"]),
+            'password' => env('DB_PASSWORD', $_ENV["DB_PASSWORD"]),
+=======
             'host' => 'localhost',
             'port' =>'3306',
             'database' => 'challenge',
             'username' => 'root',
             'password' => '',
+>>>>>>> e00b0be6aae0ca60c20584d9e0c58065aa3e0cdd
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
