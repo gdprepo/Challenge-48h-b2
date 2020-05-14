@@ -7,6 +7,10 @@ html, body {
     margin: 0;
 }
 
+.imgProduct {
+    width: 100px;
+}
+
 .ensemble{
     display: flex;
     flex-direction: row;   
@@ -56,10 +60,18 @@ html, body {
 }
 
 .background{
-    height: 90vh;
+    height: 100vh;
     background-color: black;
     display: flex;
+    flex-direction: row;   
+    justify-content: start; 
+    align-items:center;
+}
+
+
+.card-body{
+    display: flex;
     flex-direction: column;   
-    justify-content: center; 
+    justify-content: start; 
     align-items:center;
 }

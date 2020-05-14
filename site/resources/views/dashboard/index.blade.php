@@ -33,7 +33,7 @@
 
                     <ul style="margin-left: 10%; margin-top: 50px; margin-bottom: 50px;" class="list-group list-group-horizontal">
                         <a href="{{route('home')}}"><li class="list-group-item">Skate Bordeaux</li></a>
-                        <a href="{{route('home')}}"><li class="list-group-item">Information</li></a>
+                        <a href="{{route('dashboard.product')}}"><li class="list-group-item">Information</li></a>
                         <a href="{{route('home')}}"><li class="list-group-item">Nos magasins</li></a>
                         <a href="{{route('home')}}"><li class="list-group-item">Contact</li></a>
                     </ul>
