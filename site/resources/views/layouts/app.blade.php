@@ -24,24 +24,7 @@
 </head>
 <body>
     <div id="app">
-    <nav style="margin-bottom: -100px" class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1">Navbar</span>
-        @if (Route::has('login'))
-            <div class="top-right links">
-                @auth
-                    <a href="{{ url('/home') }}">Home</a>
-                    <a href="{{ route('logout') }}">Disconnect</a>
-                @else
-                    <a href="{{ route('login') }}">Login</a>
 
-                    @if (Route::has('register'))
-                        <a href="{{ route('register') }}">Register</a>
-                    @endif
-                @endauth
-            </div>
-
-        @endif
-    </nav>
         <main class="py-4">
             @yield('content')
         </main>
