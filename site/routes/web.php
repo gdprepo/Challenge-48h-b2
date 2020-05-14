@@ -35,6 +35,14 @@ Route::get('/dashboard/product', 'DashboardController@product')->name('dashboard
 Route::post('/dashboard/product/delete/{id}', 'DashboardController@productDelete')->name('product.delete');
 Route::get('/dashboard/product/add', 'DashboardController@productAdd')->name('product.add');
 Route::post('/dashboard/product/create', 'DashboardController@productCreate')->name('product.create');
+
+Route::get('/dashboard/mapskate', 'DashboardController@mapskate')->name('dashboard.mapskate');
+Route::post('/dashboard/mapskate/delete/{id}', 'DashboardController@mapDelete')->name('map.delete');
+
+
+
+
+
 Route::get('/Contact', 'ContactController@index');
 Route::post('/Contact', 'ContactController@store');
 

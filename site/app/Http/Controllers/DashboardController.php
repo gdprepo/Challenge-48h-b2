@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use App\Map;
 
 class DashboardController extends Controller
 {
@@ -47,6 +48,22 @@ class DashboardController extends Controller
         $product->save();
 
         return back()->withInfo('Product create');
+
+    }
+
+    function mapskate()
+    {
+        $maps = Map::all();
+
+        return view('dashboard.mapskate', ['maps' => $maps]);
+    }
+
+    function mapDelete($id)
+    {
+        $map = Map::find($id);
+        $map->delete();
+
+        return back()->withInfo('Delete');
 
     }
 }
