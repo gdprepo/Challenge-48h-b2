@@ -16,10 +16,10 @@ class DashboardController extends Controller
 
     function productDelete($id)
     {
-        $products = Product::find($id);
+        $product = Product::find($id);
         $product->delete();
 
-        return view('dashboard.product');
+        return back()->withInfo('Delete product');
     }
 
     function productAdd()

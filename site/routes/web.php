@@ -29,7 +29,7 @@ Route::get('/acheter', 'ProductController@index')->name('acheter.index');
 Route::get('/inscription', 'ContactController@index')->name('contact.index');
 
 Route::get('/dashboard/product', 'DashboardController@product')->name('dashboard.product');
-Route::get('/dashboard/product/delete/{id}', 'DashboardController@productDelete')->name('product.delete');
+Route::post('/dashboard/product/delete/{id}', 'DashboardController@productDelete')->name('product.delete');
 Route::get('/dashboard/product/add', 'DashboardController@productAdd')->name('product.add');
 Route::post('/dashboard/product/create', 'DashboardController@productCreate')->name('product.create');
 
