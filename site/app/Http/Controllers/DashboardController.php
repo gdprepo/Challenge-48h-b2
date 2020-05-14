@@ -39,7 +39,11 @@ class DashboardController extends Controller
 
         $product->title = $request->input('title');
         $product->description = $request->input('description');
-        $product->image = $request->input('image');
+        $product->autonomie = $request->input('autonomie');
+        $product->vitesse = $request->input('vitesse');
+        $product->couleur = $request->input('couleur');
+        $product->prix = $request->input('prix');
+        
         $product->save();
 
         return back()->withInfo('Product create');
