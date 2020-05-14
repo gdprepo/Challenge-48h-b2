@@ -2,8 +2,9 @@
 /public/hot
 /public/storage
 /storage/*.key
-/app/config/database.php
+/config/database.php
 .env.backup
+.env
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
