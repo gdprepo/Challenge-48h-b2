@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Mockery\Matcher\Contains;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,4 +33,6 @@ Route::get('/dashboard/product', 'DashboardController@product')->name('dashboard
 Route::get('/dashboard/product/delete/{id}', 'DashboardController@productDelete')->name('product.delete');
 Route::get('/dashboard/product/add', 'DashboardController@productAdd')->name('product.add');
 Route::post('/dashboard/product/create', 'DashboardController@productCreate')->name('product.create');
+Route::get('/Contact', 'ContactController@index');
+Route::post('/Contact', 'ContactController@store');
 
