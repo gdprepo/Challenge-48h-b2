@@ -20,8 +20,8 @@
 
             @endif -->
 
-            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-                <div style="height: 350px" class="carousel-inner">
+            <div style="margin-top: 100px" id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
                     <div class="carousel-item active" data-interval="5000">
                     <img style="height: 600px; margin-top: -200px" src="https://i2.wp.com/monskateelectrique.fr/wp-content/uploads/2017/12/skate-electrique-photo1.jpg?resize=1280%2C720&ssl=1" class="d-block w-100" alt="...">
                     </div>
