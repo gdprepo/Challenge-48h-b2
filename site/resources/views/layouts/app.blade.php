@@ -43,7 +43,7 @@
                         <h4 class="text-black">SKAEL</h4>
                         <a class="navbar-brand" href="/">Skate Bordeaux</a>
                         <a class="navbar-brand" href="{{route('acheter.index')}}">Information</a>
-                        <a class="navbar-brand" href="/">Contactez-nous</a>
+                        <a class="navbar-brand" href="{{route('contact.index')}}">Contactez-nous</a>
                         <a class="navbar-brand" href="/">Nos magasins</a>
                         @auth
                             <a class="navbar-brand" href="/">Commander</a>
