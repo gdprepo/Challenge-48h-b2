@@ -53,7 +53,9 @@
         <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-light p-4">
             <h4 class="text-black">Collapsed content</h4>
-            <a class="navbar-brand" href="/">Skate Bordeaux</a>
+            <a class="navbar-brand" href="/">Presentation</a>
+            <a class="navbar-brand" href="/">Acheter</a>
+            <a class="navbar-brand" href="/">Louer</a>
             </div>
         </div>
     </div>
