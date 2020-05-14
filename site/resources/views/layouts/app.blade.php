@@ -28,8 +28,8 @@
 <body>
     <div id="app">
 
-                <div class="pos-f-t">
-                    <nav class="navbar navbar-light fixed-top bg-light">
+                <div class="pos-f-t fixed-top">
+                    <nav class="navbar navbar-light bg-light">
                         <a href="/"><img style="width:30%;" src="{{ asset('images/logo.png') }}"></a>
 
                         <div class="ensemble">
