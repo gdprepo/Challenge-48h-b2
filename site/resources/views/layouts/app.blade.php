@@ -28,37 +28,41 @@
 <body>
     <div id="app">
 
-    <div class="pos-f-t">
-        <nav class="navbar navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div style="margin-right: 28%">
-            <img style="width:20%" src="{{ asset('images/logo.png') }}">
-        
-            </div>
-            <div class="top-right links">
-            @auth
-                <a href="{{ url('/home') }}">Home</a>
-                <a href="{{ route('logout') }}">Disconnect</a>
-            @else
-                <a href="{{ route('login') }}">Login</a>
+                <div class="pos-f-t fixed-top">
+                    <nav class="navbar navbar-light bg-light">
+                        <a href="/"><img style="width:30%;" src="{{ asset('images/logo.png') }}"></a>
 
-                @if (Route::has('register'))
-                    <a href="{{ route('register') }}">Register</a>
-                @endif
-            @endauth
-        </div>
-        </nav>
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-light p-4">
-            <h4 class="text-black">Collapsed content</h4>
-            <a class="navbar-brand" href="/">Presentation</a>
-            <a class="navbar-brand" href="/">Acheter</a>
-            <a class="navbar-brand" href="/">Louer</a>
+                        <div class="ensemble">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="bg-light p-4">
+                        <h4 class="text-black">SKAEL</h4>
+                        <a class="navbar-brand" href="/">Skate Bordeaux</a>
+                        <a class="navbar-brand" href="{{route('acheter.index')}}">Information</a>
+                        <a class="navbar-brand" href="/">Contactez-nous</a>
+                        <a class="navbar-brand" href="/">Nos magasins</a>
+                        @auth
+                            <a class="navbar-brand" href="/">Commander</a>
+                        @endauth
+                        <div style="float :right" class="top-right links">
+                        @auth
+                            <a href="{{ url('/home') }}">Home</a>
+                            <a href="{{ route('logout') }}">Disconnect</a>
+                        @else
+                            <a href="{{ route('login') }}">Login</a>
+
+                            @if (Route::has('register'))
+                                <a href="{{ route('register') }}">Register</a>
+                            @endif
+                        @endauth
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
 
         <main class="py-4">
