@@ -2,11 +2,7 @@
 /public/hot
 /public/storage
 /storage/*.key
-/config/database.php
-<<<<<<< HEAD
-=======
-.env
->>>>>>> 93bae807ba77cd3497e986e8d4b585479796b4e8
+/app/config/database.php
 .env.backup
 .phpunit.result.cache
 Homestead.json
