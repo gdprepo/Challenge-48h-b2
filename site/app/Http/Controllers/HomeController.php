@@ -24,6 +24,10 @@ class HomeController extends Controller
      */
     public function index()
     {
+        if ($this->isAdmin()) {
+            return view('dashboard.index');
+        }
+
         return view('home');
     }
 
@@ -32,5 +36,11 @@ class HomeController extends Controller
         Auth::logout();
 
         return redirect('/');
+    }
+
+    public function isAdmin()     
+    {         
+        $user = Auth::user();          
+        return (Auth::check() && $user->role === 'admin');     
     }
 }

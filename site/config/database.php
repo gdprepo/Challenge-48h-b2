@@ -46,11 +46,19 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
+<<<<<<< HEAD
             'host' => 'localhost',
             'port' => '8889',
             'database' => 'challenge',
             'username' => 'root',
             'password' => 'root',
+=======
+            'host' =>'localhost',
+            'port' => '3308',
+            'database' => 'challenge',
+            'username' => 'root',
+            'password' =>'',
+>>>>>>> 5c432100aa0b50d6bba537365439db51017a6f18
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
