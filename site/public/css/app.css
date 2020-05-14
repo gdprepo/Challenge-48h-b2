@@ -61,7 +61,7 @@ html, body {
 
 .background{
     height: 100vh;
-    background-color: black;
+    background:url("./images/Skate_arthur.png");
     display: flex;
     flex-direction: row;   
     justify-content: start; 
