@@ -12,4 +12,6 @@
 
 > git clone le repo
 
+> composer install (avoir le vendor)
+
 > utiliser mysql
