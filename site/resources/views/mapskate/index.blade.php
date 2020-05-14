@@ -122,7 +122,7 @@ function initMap() {
                         <div class="bg-light p-4">
                         <h4 class="text-black">SKAEL</h4>
                         <a class="navbar-brand" href="/">Skate Bordeaux</a>
-                        <a class="navbar-brand" href="{{route('acheter.index')}}">Information</a>
+                        <a class="navbar-brand" href="{{route('Information.index')}}">Information</a>
                         <a class="navbar-brand" href="/">Contactez-nous</a>
                         @auth
                             <a class="navbar-brand" href="/">Nos parkings</a>
