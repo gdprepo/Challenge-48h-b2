@@ -27,8 +27,8 @@
                     <thead>
                     <tr>
                         <th scope="col">Titre</th>
-                        <th scope="col">Description</th>
                         <th scope="col">Image</th>
+                        <th scope="col">Description</th>
                         <th scope="col">Action(s)</th>
                     </tr>
                     </thead>
@@ -36,16 +36,14 @@
                     @foreach ($products as $product)
                     <tr>
                         <td scope="row">{{$product->title}}</td>
-                        <td scope="row">{{$product->description}}</td>
                         <td><img class="imgProduct" src="{{$product->image}}"></img></td>
+                        <td scope="row">{{$product->description}}</td>
                         
                         <td scope="row">
-
-                        <form action="{{route('product.delete', $product->id)}}" method="POST">
-                            @csrf
-                            <button type="submit" class="btn btn-primary">Supprimer </button>
-                        </form>
-
+                            <form action="{{route('product.delete', $product->id)}}" method="POST">
+                                @csrf
+                                <button type="submit" class="btn btn-primary">Supprimer </button>
+                            </form>
                         </td>    
                     
                     
