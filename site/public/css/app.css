@@ -127,3 +127,14 @@ p{
     justify-content: center; 
     align-items:center;
 }
+
+.body2{ 
+    height: 100vh;
+    background:linear-gradient(150deg, #FFFFFF 60%, rgb(182, 182, 182) 40%);
+}
+
+
+.container{
+    margin-top: 10%;
+
+}

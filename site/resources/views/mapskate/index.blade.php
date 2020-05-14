@@ -79,18 +79,19 @@
 			text-align:center;
 		}
 	</style>
-
-	<div class="toutmap">
-		<div class="header">
-			<h2>Vous voulez utiliser un de nos magnifiques skates electrique ?
-				<p>Trouvez-les sur la map !</p>
-			</h2>
+	
+	<body class="body2">
+		<div class="toutmap">
+			<div class="header">
+				<h2>Vous voulez utiliser un de nos magnifiques skates electrique ?
+					<p>Trouvez-les sur la map !</p>
+				</h2>
+			</div>
+			<div style="margin-left: 5%" id="map">
+					<!-- Ici s'affichera la carte -->
+			</div>
 		</div>
-		<div style="margin-left: 5%" id="map">
-				<!-- Ici s'affichera la carte -->
-		</div>
-	</div>
-
+	</body>
 
 @endsection
 
