@@ -38,6 +38,9 @@ Route::post('/dashboard/product/create', 'DashboardController@productCreate')->n
 
 Route::get('/dashboard/mapskate', 'DashboardController@mapskate')->name('dashboard.mapskate');
 Route::post('/dashboard/mapskate/delete/{id}', 'DashboardController@mapDelete')->name('map.delete');
+Route::get('/dashboard/mapskate/add', 'DashboardController@mapAdd')->name('map.add');
+Route::post('/dashboard/mapskate/create', 'DashboardController@mapCreate')->name('map.create');
+
 
 
 

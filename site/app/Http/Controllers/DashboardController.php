@@ -66,4 +66,29 @@ class DashboardController extends Controller
         return back()->withInfo('Delete');
 
     }
+
+    function mapAdd()
+    {
+        return view('dashboard.addMap');
+    }
+
+    function mapCreate(Request $request)
+    {
+        $request->validate([
+            'title' => ['required'],
+            'long' => ['required'],
+            'lat' => ['required'],
+        ]);
+
+        $map = new MapÒ;
+
+        $map->title = $request->input('title');
+        $map->description = $request->input('lon');
+        $map->autonomie = $request->input('lat');
+        
+        $map->save();
+
+        return back()->withInfo('Map create');
+
+    }
 }

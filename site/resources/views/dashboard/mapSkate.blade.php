@@ -24,7 +24,7 @@
                     List 
                     <div class="top-right links" style="float: right">
                         <a href="{{route('home')}}">Retour</a>
-                        <a href="{{route('product.add')}}">Ajouter</a>
+                        <a href="{{route('map.add')}}">Ajouter</a>
                     </div>
                 
                 </div>
