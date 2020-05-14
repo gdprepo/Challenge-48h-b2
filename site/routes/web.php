@@ -21,3 +21,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/logout', 'HomeController@logout')->name('disconnect');
+
+
+Route::get('/acheter', 'ProductController@index')->name('acheter.index');
