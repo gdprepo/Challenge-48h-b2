@@ -13,4 +13,11 @@ class DashboardController extends Controller
 
         return view('dashboard.product', ['products' => $products]);
     }
+
+    function productDelete($id)
+    {
+        $products = Product::find($id);
+
+        return view('dashboard.product');
+    }
 }
