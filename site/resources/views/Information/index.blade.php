@@ -44,20 +44,31 @@
                 </p>
             </div>
         </div>
-        <div class="articles2" styles="background-color:gray">
+        <div class="articles2">
+            <div class="textearticles">
+                <h2>Nos skates</h2>
+                <p>
+                    Bien sûr nous choisissons des planches tout d'abords pour une expérience agréable et sans dangers.<br/>
+                    Nous avons donc opté pour le skate motorisé modèle urbain pour une meilleure prise en main.<br/>
+                    Nos planches électriques peuvent offrir des gammes de vitesses allant de 35 km/h à 45 km/h.<br/>
+                    Leur autonomie max est d'en moyenne de 20 à 30 minutes environ.
+                </p>
+            </div>
+            <img style="width:30%;"src="{{ asset('images/skateplanche.jpg') }}"> 
+        </div>  
+        <div class="articles">
+            <img style="width:30%;"src="{{ asset('images/skatefuture.jpg') }}"> 
             <div class="textearticles">
                 <h2>Envie d'aventures?</h2>
-                <p>Envie de plus de sensation ? Essaye les nouveaux modèles (limiter et plus chères)</p>
+                <p>Envie de plus de sensation ? Essaye les nouveaux modèles (limitées et plus chères)</p>
             </div>
-            <img style="width:30%;"src="{{ asset('images/skatefuture.jpg') }}"> 
         </div>  
-        </div>
-        <div class="articles">
-            <img style="width:40%;" src="{{ asset('images/Payement.jpg') }}"> 
+        <div class="articles2">
             <div class="textearticles">
                 <h2>Payements</h2>
                 <p>Le déverrouillage de l’appareil coûte 1 euro, plus 10 centimes pour chaque minute de réservation.</p>
             </div>
+            <img style="width:40%;" src="{{ asset('images/Payement.jpg') }}"> 
         </div>
     </div>
 
