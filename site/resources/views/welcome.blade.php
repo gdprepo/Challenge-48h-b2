@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-<div class="pos-f-t">
+<!-- <div class="pos-f-t">
   <nav class="navbar navbar-light bg-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@
       <a class="navbar-brand" href="">Skate Bordeaux</a>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- 
 <nav class="navbar navbar-light bg-light">

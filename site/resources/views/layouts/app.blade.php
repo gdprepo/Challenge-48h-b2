@@ -28,6 +28,37 @@
 <body>
     <div id="app">
 
+    <div class="pos-f-t">
+  <nav class="navbar navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div style="margin-right: 28%">
+    <img style="width:20%" src="{{ asset('images/logo.png') }}">
+   
+    </div>
+    <div class="top-right links">
+    @auth
+        <a href="{{ url('/home') }}">Home</a>
+        <a href="{{ route('logout') }}">Disconnect</a>
+    @else
+        <a href="{{ route('login') }}">Login</a>
+
+        @if (Route::has('register'))
+            <a href="{{ route('register') }}">Register</a>
+        @endif
+    @endauth
+  </div>
+  </nav>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-light p-4">
+      <h4 class="text-black">Collapsed content</h4>
+      <a class="navbar-brand" href="">Skate Bordeaux</a>
+    </div>
+  </div>
+</div>
+
+
         <main class="py-4">
             @yield('content')
         </main>
