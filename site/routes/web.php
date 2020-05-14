@@ -24,3 +24,4 @@ Route::get('/logout', 'HomeController@logout')->name('disconnect');
 
 
 Route::get('/acheter', 'ProductController@index')->name('acheter.index');
+Route::get('/inscription', 'ContactController@index')->name('contact.index');
