@@ -22,13 +22,31 @@
             
                 <div class="card-header">
                     Add Product 
-
-                
+            
                 </div>
 
                 <div class="card-body">
                         
+                    <form method="post" action="{{route('product.create')}}">
+                    @csrf
+                        <div class="form-group">
+                            <label>Titre </label>
+                            <input class="form-control" type="text" name="title" id="title" placeholder="Entrer un titre">
+                        </div>
 
+                        <div class="form-group">
+                            <label>Description</label>
+                            <input class="form-control" type="text" name="description" id="description" placeholder="Entrer une description">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Image</label>
+                            <input class="form-control" type="text" name="image" id="image" placeholder="Entrer une image">
+                        </div>
+
+                        <button class="form-control" type="submit" class="btn btn-primary">Enregistrer</button>
+
+                    </form>
 
 
                         
