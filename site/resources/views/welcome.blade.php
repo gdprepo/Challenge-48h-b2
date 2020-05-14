@@ -5,6 +5,10 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <div style="margin-right: 28%">
+    <img style="width:20%" src="{{ asset('images/logo.png') }}">
+   
+    </div>
     <div class="top-right links">
     @auth
         <a href="{{ url('/home') }}">Home</a>
