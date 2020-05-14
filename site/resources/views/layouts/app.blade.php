@@ -50,7 +50,7 @@
                         @endauth
                         <div style="float :right" class="top-right links">
                         @auth
-                            <a href="{{ url('/home') }}">Home</a>
+                            <a href="{{ url('/') }}">Home</a>
                             <a href="{{ route('logout') }}">Disconnect</a>
                         @else
                             <a href="{{ route('login') }}">Login</a>

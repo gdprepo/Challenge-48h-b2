@@ -20,10 +20,10 @@
 
             @endif -->
             <div class="background">
-                <div style=" margin-left:5%">
+                <div style=" margin-left:5%; margin-top:30%">
                     <h1>Bienvenue sur SKAEL</h1>
                     <p>Nous proposons des Skate electrique <br/>partout dans bordeaux</p>
-                    <a href="/">En savoir plus</a>
+                    <a style="color = black;" href="/Information">En savoir plus</a>
                 </div>
             </div>
             <div style=" margin-top:1%" id="carouselExampleInterval" class="carousel slide" data-ride="carousel">

@@ -47,7 +47,7 @@ return [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
             'host' => 'localhost',
-            'port' =>'3308',
+            'port' =>'3306',
             'database' => 'challenge',
             'username' => 'root',
             'password' => '',
