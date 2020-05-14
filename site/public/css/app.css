@@ -68,13 +68,10 @@ html, body {
     align-items:center;
 }
 
-.background2{
-    height: 100vh;
-    background: url("/images/skateur.jpg");
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+
+.card-body{
     display: flex;
-    flex-direction: row;   
-    justify-content: end; 
+    flex-direction: column;   
+    justify-content: start; 
     align-items:center;
 }

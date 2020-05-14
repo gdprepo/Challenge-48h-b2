@@ -26,7 +26,7 @@
                     <a href="/">En savoir plus</a>
                 </div>
             </div>
-            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+            <div style=" margin-top:1%" id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-interval="5000">
                         <img style="height: 600px; margin-top: -200px" src="https://i2.wp.com/monskateelectrique.fr/wp-content/uploads/2017/12/skate-electrique-photo1.jpg?resize=1280%2C720&ssl=1" class="d-block w-100" alt="...">
@@ -49,18 +49,18 @@
             </div>
             <div class="background2">
                 <div style=" margin-left:5%">
-                    <h2>Des parking réguliers</h2>
-                    <p>SKAEL vous permet d'aller partout rapidement</p>
-                    <a href="/">En savoir plus</a>
+
                 </div>
             </div>
 
             <div class="container">
 
                 <div class="card" style="margin-left: 10%; width: 80%; margin-top: 50px">
-                    <img style="height: 400px" src="https://i0.wp.com/www.blablahightech.fr/wp-content/uploads/2016/06/maxresdefault.jpg" class="card-img-top" alt="...">
+                    <img style="height: 400px" src="{{ asset('images/skateur.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h2>Des parking réguliers</h2>
+                        <p>SKAEL vous permet d'aller partout rapidement</p>
+                        <a href="/">En savoir plus</a>
                     </div>
                 </div>
             </div>
