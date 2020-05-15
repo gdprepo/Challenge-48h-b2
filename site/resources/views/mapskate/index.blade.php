@@ -117,7 +117,7 @@
 						<p>Trouvez-les sur la map !</p>
 					</h2>
 				</div>
-				<div style="margin-left: 5%" id="map">
+				<div style="margin-left: 0%" id="map">
 						<!-- Ici s'affichera la carte -->
 				</div>
 			</div>
