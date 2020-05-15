@@ -7,7 +7,7 @@
         <div style=" margin-top:100px" id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-interval="5000">
-                    <img style="height: 600px; margin-top: -200px" src="https://i2.wp.com/monskateelectrique.fr/wp-content/uploads/2017/12/skate-electrique-photo1.jpg?resize=1280%2C720&ssl=1" class="d-block w-100" alt="...">
+                    <img style="height: 600px; margin-top: -200px" src="{{$product->image}}" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-interval="5000">
                     <img style="height: 600px; margin-top: -200px" src="https://trottineteelectrique.online/wp-content/uploads/acheter-skate-electric-3-1024x576.jpg" class="d-block w-100" alt="...">  
