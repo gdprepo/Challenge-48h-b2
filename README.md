@@ -12,6 +12,8 @@
 
 ## Installation
 
+> Nous avons besoin de laravel 
+>
 > git clone le repo
 
 > lancer la commande :
@@ -26,3 +28,7 @@
 > Ensuite lancer le commande :
 >
 > php artisan migrate:fresh --seed 
+
+> Lancer le serveur avec la commande :
+>
+> php artisan migrate
