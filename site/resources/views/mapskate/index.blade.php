@@ -115,7 +115,7 @@
 				<div class="header">
 					<h2>Vous voulez utiliser un de nos magnifiques skates electrique ?</h2>
 					<p>Trouvez-les sur la map !</p>
-					<p> 4 Skate(s) disponible</p>
+					<p> {{count($maps)}} Skate(s) disponible</p>
 				</div>
 				<div id="map">
 						<!-- Ici s'affichera la carte -->

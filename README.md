@@ -1,5 +1,7 @@
 # Challenge-48h-b2
 
+lien du github : https://github.com/wewlr17/Challenge-48h-b2
+
 ## Presentation
 
 * Voici notre site web SKAEL qui presente une collection de skate electrique disponible à la location dans la ville de Bordeaux. Ce qui permet des trajets moins poluant et plus pratique.
