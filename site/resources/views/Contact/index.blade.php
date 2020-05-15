@@ -70,7 +70,7 @@
         </div>
         <div class="container">
                     <div class="row">
-                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                        <div class="col-md-8 ">
                             <h2>Contactez-nous</h2>
                             <p class="text-muted">Contactez-nous pour d'avantages d'informations !</p>
 
