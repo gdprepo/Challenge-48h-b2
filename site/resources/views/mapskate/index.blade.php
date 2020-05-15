@@ -113,9 +113,9 @@
 		<div class="toutmap">
 			<div>
 				<div class="header">
-					<h2>Vous voulez utiliser un de nos magnifiques skates electrique ?
-						<p>Trouvez-les sur la map !<script type="text/javascript"></script></p>
-					</h2>
+					<h2>Vous voulez utiliser un de nos magnifiques skates electrique ?</h2>
+					<p>Trouvez-les sur la map !</p>
+					<p> 4 Skate(s) disponible</p>
 				</div>
 				<div id="map">
 						<!-- Ici s'affichera la carte -->
