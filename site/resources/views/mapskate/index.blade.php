@@ -109,25 +109,19 @@
 		}
 	</style>
 	
-	<body class="body2">
+	<body class="body3">
 		<div class="toutmap">
 			<div>
 				<div class="header">
 					<h2>Vous voulez utiliser un de nos magnifiques skates electrique ?
-						<p>Trouvez-les sur la map !</p>
+						<p>Trouvez-les sur la map !<script type="text/javascript"></script></p>
 					</h2>
 				</div>
-				<div style="margin-left: 5%" id="map">
+				<div id="map">
 						<!-- Ici s'affichera la carte -->
 				</div>
 			</div>
 			<div class="header">
-				<div>
-					<h2>Où skater et se garer.</h2>
-				</div>
-				<div style="margin-left: 5%" id="map">
-						<!-- Ici s'affichera la carte -->
-				</div>
 				<h2>Les pakings et endroit spéciaux</h2>
 				<img src="{{ asset('images/parkings.png') }}">
 			</div>

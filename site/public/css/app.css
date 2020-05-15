@@ -133,6 +133,10 @@ p{
     background:linear-gradient(150deg, #FFFFFF 60%, rgb(182, 182, 182) 40%);
 }
 
+.body3{ 
+    height: 160vh;
+    background:linear-gradient(150deg, #FFFFFF 60%, rgb(182, 182, 182) 40%);
+}
 
 .container{
     margin-top: 10%;
