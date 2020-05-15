@@ -5,7 +5,7 @@
     <div class="container" style="width:100%;">
         <div class="row">
         @foreach($products as $product)
-        <div class="col-sm" style="margin-top: 100px">
+        <div class="col-sm" style="margin-top: 0px">
             <div class="card" style="width: 100%; margin-top: 50px">
                 <img style="height: 250px" src="{{$product->image}}" class="card-img-top img-thumbnail" alt="...">
                 <a href="{{route('acheter.show', $product->id)}}">
