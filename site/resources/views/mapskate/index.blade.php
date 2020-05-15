@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('content')
     <script src="https://maps.google.com/maps/api/js?key=AIzaSyDnjddgiIzugWefdxHL4aqds_3SbBb_iz4" type="text/javascript"></script>
-<<<<<<< HEAD
 		<script async type="text/javascript">
 			// On initialise la latitude et la longitude de Bordeux (centre de la carte)
 			var lat = 44.841225;
@@ -112,13 +111,25 @@
 	
 	<body class="body2">
 		<div class="toutmap">
-			<div class="header">
-				<h2>Vous voulez utiliser un de nos magnifiques skates electrique ?
-					<p>Trouvez-les sur la map !</p>
-				</h2>
+			<div>
+				<div class="header">
+					<h2>Vous voulez utiliser un de nos magnifiques skates electrique ?
+						<p>Trouvez-les sur la map !</p>
+					</h2>
+				</div>
+				<div style="margin-left: 5%" id="map">
+						<!-- Ici s'affichera la carte -->
+				</div>
 			</div>
-			<div style="margin-left: 5%" id="map">
-					<!-- Ici s'affichera la carte -->
+			<div class="header">
+				<div>
+					<h2>Où skater et se garer.</h2>
+				</div>
+				<div style="margin-left: 5%" id="map">
+						<!-- Ici s'affichera la carte -->
+				</div>
+				<h2>Les pakings et endroit spéciaux</h2>
+				<img src="{{ asset('images/parkings.png') }}">
 			</div>
 		</div>
 	</body>
