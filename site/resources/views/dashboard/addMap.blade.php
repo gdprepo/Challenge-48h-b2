@@ -41,13 +41,13 @@
                         <div class="row">
                             <div class="form-group col-6">
                                 <label>Latitude</label>
-                                <input class="form-control" type="text" name="lat" id="lat" placeholder="Entrer une image">
+                                <input class="form-control" type="text" name="lat" id="lat" placeholder="Entrer une latitude">
                         
                             </div>
 
                             <div class="form-group col-6">
                                 <label>Longitude</label>
-                                <input class="form-control" type="text" name="lon" id="lon" placeholder="Entrer une description">
+                                <input class="form-control" type="text" name="lon" id="lon" placeholder="Entrer une longitude">
                             </div>
                         </div>
 
