@@ -18,7 +18,7 @@
 
     @endif -->
     <div class="background">
-        <div style=" margin-left:5%; margin-top:30%">
+        <div style=" margin-left:5%; margin-top:-20%">
             <h1>Bienvenue sur SKAEL</h1>
             <p>Nous proposons des Skate electrique <br/>partout dans Bordeaux</p>
             <a  href="/Information">En savoir plus</a>
@@ -27,10 +27,10 @@
     <div style=" margin-top:1%" id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-interval="5000">
-                <img style="height: 600px; margin-top: -200px" src="https://i2.wp.com/monskateelectrique.fr/wp-content/uploads/2017/12/skate-electrique-photo1.jpg?resize=1280%2C720&ssl=1" class="d-block w-100" alt="...">
+                <img src="{{ asset('images/bannière.png') }}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item" data-interval="5000">
-                <img style="height: 600px; margin-top: -200px" src="https://trottineteelectrique.online/wp-content/uploads/acheter-skate-electric-3-1024x576.jpg" class="d-block w-100" alt="...">  
+                <img src="{{ asset('images/baba.png') }}" class="d-block w-100" alt="...">  
             </div>
             <div class="carousel-item" data-interval="5000">
                 <img style="height: 600px; margin-top: -200px" src="{{ asset('images/imgaléatoire.png') }}" class="d-block w-100" alt="...">  
@@ -52,7 +52,7 @@
                 <div class="card-body">
                     <h2>Des parking réguliers</h2>
                     <p>SKAEL vous permet d'aller partout rapidement</p>
-                    <a href="/">En savoir plus</a>
+                    <a href="/mapskate">En savoir plus</a>
                 </div>
             </div>
         </div>

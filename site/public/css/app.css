@@ -83,7 +83,8 @@ a {
 }
 
 p{
-    font-size: 18px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .Info{
@@ -100,4 +101,40 @@ p{
     flex-direction: row;   
     justify-content: space-around; 
     align-items:center;
+
+}
+
+.articles2{
+    width: 99vW;
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-around; 
+    align-items:center;
+    background-color:rgb(182, 182, 182);
+}
+
+.textearticles{
+    width: 95vW;
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-evenly; 
+    align-items:center;
+}
+
+.toutmap{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center; 
+    align-items:center;
+}
+
+.body2{ 
+    height: 100vh;
+    background:linear-gradient(150deg, #FFFFFF 60%, rgb(182, 182, 182) 40%);
+}
+
+
+.container{
+    margin-top: 10%;
+
 }

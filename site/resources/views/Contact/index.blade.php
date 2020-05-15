@@ -1,113 +1,48 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+@section('content')
+    <body class="body2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                    <h2>Contactez-nous</h2>
+                    <p class="text-muted">Contactez-nous pour d'avantages d'informations !</p>
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+                    <form action="/Contact" method="POST" novalidate>
+                    {{ csrf_field() }}
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <style type="text/css">
-            .container {
-                padding-top: 170px
-            }
-    </style>
-</head>
-<body>
-    <div id="app">
-
-                <div class="pos-f-t fixed-top">
-                    <nav class="navbar navbar-light bg-light">
-                        <a href="/"><img style="width:30%;" src="{{ asset('images/logo.png') }}"></a>
-
-                        <div class="ensemble">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                        <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}" >
+                            <label for="name" class="control-label">Nom</label>
+                            <input type="text" name="name" id="name" class="form-control" required="required">
+                            {!! $errors->first('name', '<span class="help-block">:message</span>') !!}
                         </div>
-                    </nav>
-                    <div class="collapse" id="navbarToggleExternalContent">
-                        <div class="bg-light p-4">
-                        <h4 class="text-black">SKAEL</h4>
-                        <a class="navbar-brand" href="/">Skate Bordeaux</a>
-                        <a class="navbar-brand" href="{{route('acheter.index')}}">Information</a>
-                        <a class="navbar-brand" href="/Contact">Contactez-nous</a>
-                        @auth
-                            <a class="navbar-brand" href="/">Nos parkings</a>
-                            <a class="navbar-brand" href="/mapskate">Skate pas loin</a>
-                        @endauth
-                        <div style="float :right" class="top-right links">
-                        @auth
-                            <a href="{{ url('/home') }}">Home</a>
-                            <a href="{{ route('logout') }}">Disconnect</a>
-                        @else
-                            <a href="{{ route('login') }}">Login</a>
 
-                            @if (Route::has('register'))
-                                <a href="{{ route('register') }}">Register</a>
-                            @endif
-                        @endauth
-                    </div>
+                        <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
+                            <label for="email" class="control-label">Email</label>
+                            <input type="email" name="email" id="email" class="form-control" required="required">
+                            {!! $errors->first('email', '<span class="help-block">:message</span>') !!}
+                        </div>
+
+                        <div class="form-group {{ $errors->has('message') ? 'has-error' : '' }}">
+                            <label for="message" class="control-label sr-only">Message</label>
+                            <textarea class="form-control" rows="10" cols="10" required="required" name="message" id="message"></textarea>
+                            {!! $errors->first('message', '<span class="help-block">:message</span>') !!}
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-block" >Envoyer &raquo;</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 ">
-                            <h2>Contactez-nous</h2>
-                            <p class="text-muted">Contactez-nous pour d'avantages d'informations !</p>
-
-                            <form action="/Contact" method="POST" novalidate>
-                                {{ csrf_field() }}
-
-                                <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}" >
-                                    <label for="name" class="control-label">Nom</label>
-                                    <input type="text" name="name" id="name" class="form-control" required="required">
-                                    {!! $errors->first('name', '<span class="help-block">:message</span>') !!}
-                                </div>
-
-                                <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
-                                    <label for="email" class="control-label">Email</label>
-                                    <input type="email" name="email" id="email" class="form-control" required="required">
-                                    {!! $errors->first('email', '<span class="help-block">:message</span>') !!}
-                                </div>
-
-                                <div class="form-group {{ $errors->has('message') ? 'has-error' : '' }}">
-                                    <label for="message" class="control-label sr-only">Message</label>
-                                    <textarea class="form-control" rows="10" cols="10" required="required" name="message" id="message"></textarea>
-                                    {!! $errors->first('message', '<span class="help-block">:message</span>') !!}
-                                </div>
-
-                                <div class="form-group">
-                                    <button class="btn btn-primary btn-block" >Envoyer &raquo;</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
 
         <main class="py-4">
             @yield('content')
         </main>
     </div>
 </body>
-</html>
+@endsection
+
         
     
