@@ -36,39 +36,60 @@
 				// Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
 				initMap(); 
 			};
-            var villes = {
-	"Paris":{"lat": 44.8623715,"lon": -0.5500191},
-	"Brest":{"lat": 44.845317649260124,"lon": -0.5730832184174939},
-	"Quimper":{"lat": 44.82567078039429,"lon": -0.5556991433816871},
-	"Bayonne":{"lat": 44.8310139,"lon": -0.5726503}
-};
-function initMap() {
-	map = new google.maps.Map(document.getElementById("map"), {
-		center: new google.maps.LatLng(lat, lon),
-		zoom: 12,
-		mapTypeId: google.maps.MapTypeId.ROADMAP,
-		mapTypeControl: true,
-		scrollwheel: false,
-		mapTypeControlOptions: {
-			style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR
-		},
-		navigationControl: true,
-		navigationControlOptions: {
-			style: google.maps.NavigationControlStyle.ZOOM_PAN
-		}
-	});
-	// Nous parcourons la liste des villes
-	for(ville in villes){
-		var marker = new google.maps.Marker({
-			// A chaque boucle, la latitude et la longitude sont lues dans le tableau
-			position: {lat: villes[ville].lat, lng: villes[ville].lon},
-			// On en profite pour ajouter une info-bulle contenant le nom de la ville
-			title: ville,
-			map: map
-		});	
-	}
-}
+
+			var villes = {
+				"Cite du vin":{"lat": 44.8623715,"lon": -0.5500191},
+			}
+
+			var maps = <?php echo json_encode($maps); ?>;
+			
+
+			for (const [ville, map] of Object.entries(maps)) {
+
+				let title = map.title
+
+				var obj = {
+					[title] : {
+						lat : parseFloat(map.lat, 10),
+						lon : parseFloat(map.lon, 10),
+					},
+				}
+
+				var res = $.extend({}, obj)
+
+				Object.assign(villes, res);
+
+
+			}
+
+			function initMap() {
+				map = new google.maps.Map(document.getElementById("map"), {
+					center: new google.maps.LatLng(lat, lon),
+					zoom: 12,
+					mapTypeId: google.maps.MapTypeId.ROADMAP,
+					mapTypeControl: true,
+					scrollwheel: false,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR
+					},
+					navigationControl: true,
+					navigationControlOptions: {
+						style: google.maps.NavigationControlStyle.ZOOM_PAN
+					}
+				});
+				// Nous parcourons la liste des villes
+				for(ville in villes){
+					var marker = new google.maps.Marker({
+						// A chaque boucle, la latitude et la longitude sont lues dans le tableau
+						position: {lat: villes[ville].lat, lng: villes[ville].lon},
+						// On en profite pour ajouter une info-bulle contenant le nom de la ville
+						title: ville,
+						map: map
+					});	
+				}
+			}
 		</script>
+
 		<style type="text/css">
 			#map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
 				height:550px;
