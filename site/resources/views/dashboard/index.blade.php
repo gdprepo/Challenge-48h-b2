@@ -31,11 +31,9 @@
                     You are logged in!
 
 
-                    <ul style="margin-left: ; margin-top: 50px; margin-bottom: 50px;" class="list-group list-group-horizontal">
-                        <a href="{{route('home')}}"><li class="list-group-item">Skate Bordeaux</li></a>
-                        <a href="{{route('dashboard.product')}}"><li class="list-group-item">Information</li></a>
-                        <a href="{{route('dashboard.mapskate')}}"><li class="list-group-item">Map Skate</li></a>
-                        <a href="{{route('home')}}"><li class="list-group-item">Contact</li></a>
+                    <ul style="width:100%; margin-top: 50px; margin-bottom: 50px;" class="list-group list-group-horizontal">
+                        <a style="width:100% " href="{{route('dashboard.product')}}"><li class="list-group-item" style="text-align: center">Products</li></a>
+                        <a style="width:100% " href="{{route('dashboard.mapskate')}}"><li class="list-group-item "  style="text-align: center">Map Skate</li></a>
                     </ul>
                 </div>
             </div>
