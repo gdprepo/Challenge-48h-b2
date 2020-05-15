@@ -43,6 +43,7 @@
                         <h4 class="text-black">SKAEL</h4>
                         <a class="navbar-brand" href="/">Accueil</a>
                         <a class="navbar-brand" href="{{route('Information.index')}}">Information</a>
+                        <a class="navbar-brand" href="{{route('acheter.product')}}">Produits</a>
                         <a class="navbar-brand" href="/Contact">Contactez-nous</a>
 
                         @auth
