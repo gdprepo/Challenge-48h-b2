@@ -46,8 +46,7 @@
                         <a class="navbar-brand" href="/Contact">Contactez-nous</a>
 
                         @auth
-                            <a class="navbar-brand" href="/">Nos parkings</a>
-                            <a class="navbar-brand" href="/mapskate">Skate pas loin</a>
+                            <a class="navbar-brand" href="/mapskate">Skate disponible et parkings </a>
                         @endauth
                         <div style="float :right" class="top-right links">
                         @auth
