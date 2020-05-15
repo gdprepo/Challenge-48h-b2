@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Product;
 use App\Map;
 
@@ -10,6 +11,10 @@ class DashboardController extends Controller
 {
     function product()
     {
+        if (!$this->isAdmin()) {
+            return redirect('/');
+        }
+
         $products = Product::all();
 
         return view('dashboard.product', ['products' => $products]);
@@ -17,6 +22,10 @@ class DashboardController extends Controller
 
     function productDelete($id)
     {
+        if (!$this->isAdmin()) {
+            return redirect('/');
+        }
+
         $product = Product::find($id);
         $product->delete();
 
@@ -25,11 +34,19 @@ class DashboardController extends Controller
 
     function productAdd()
     {
+        if (!$this->isAdmin()) {
+            return redirect('/');
+        }
+
         return view('dashboard.addProduct');
     }
 
     function productCreate(Request $request)
     {
+        if (!$this->isAdmin()) {
+            return redirect('/');
+        }
+
         $request->validate([
             'title' => ['required'],
             'description' => ['required'],
@@ -53,6 +70,10 @@ class DashboardController extends Controller
 
     function mapskate()
     {
+        if (!$this->isAdmin()) {
+            return redirect('/');
+        }
+
         $maps = Map::all();
 
         return view('dashboard.mapskate', ['maps' => $maps]);
@@ -60,6 +81,10 @@ class DashboardController extends Controller
 
     function mapDelete($id)
     {
+        if (!$this->isAdmin()) {
+            return redirect('/');
+        }
+
         $map = Map::find($id);
         $map->delete();
 
@@ -69,6 +94,10 @@ class DashboardController extends Controller
 
     function mapAdd()
     {
+        if (!$this->isAdmin()) {
+            return redirect('/');
+        }
+
         return view('dashboard.addMap');
     }
 
@@ -89,5 +118,12 @@ class DashboardController extends Controller
 
         return back()->withInfo('Map create');
 
+    }
+
+    public function isAdmin()     
+    {         
+        $user = Auth::user(); 
+        
+        return (Auth::check() && $user->role === 'admin');     
     }
 }

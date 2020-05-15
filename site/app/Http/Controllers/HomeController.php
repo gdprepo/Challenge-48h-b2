@@ -27,6 +27,9 @@ class HomeController extends Controller
         if ($this->isAdmin()) {
             return view('dashboard.index');
         }
+        if (Auth::check()) {
+            return view('/welcome');
+        }
 
         return view('home');
     }

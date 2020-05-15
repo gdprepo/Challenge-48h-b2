@@ -50,6 +50,8 @@
                         @endauth
                         <div style="float :right" class="top-right links">
                         @auth
+                            <a>{{Auth::user()->name}}</a>
+
                             <a href="{{ route('logout') }}">Disconnect</a>
                         @else
                             <a href="{{ route('login') }}">Login</a>
