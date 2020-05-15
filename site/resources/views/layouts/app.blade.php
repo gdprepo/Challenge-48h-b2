@@ -41,8 +41,8 @@
                     <div class="collapse" id="navbarToggleExternalContent">
                         <div class="bg-light p-4">
                         <h4 class="text-black">SKAEL</h4>
-                        <a class="navbar-brand" href="/">Skate Bordeaux</a>
-                        <a class="navbar-brand" href="{{route('acheter.index')}}">Information</a>
+                        <a class="navbar-brand" href="/">Accueil</a>
+                        <a class="navbar-brand" href="{{route('Information.index')}}">Information</a>
                         <a class="navbar-brand" href="/Contact">Contactez-nous</a>
 
                         @auth
@@ -51,7 +51,6 @@
                         @endauth
                         <div style="float :right" class="top-right links">
                         @auth
-                            <a href="{{ url('/') }}">Home</a>
                             <a href="{{ route('logout') }}">Disconnect</a>
                         @else
                             <a href="{{ route('login') }}">Login</a>
