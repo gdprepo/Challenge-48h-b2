@@ -16,7 +16,7 @@
 </nav>
 @section('content')
 <div class="container">
-    <div style="margin-top: 100px" class="row justify-content-center">
+    <div style="margin-top: -100px" class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
             
@@ -36,7 +36,7 @@
                     <tr>
                         <th scope="col">Titre</th>
                         <!-- <th scope="col">Image</th> -->
-                        <th scope="col">Logitude</th>
+                        <th scope="col">Longitude</th>
                         <th scope="col">Latitude</th>
 
                         <th scope="col">Action(s)</th>
