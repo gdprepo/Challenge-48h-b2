@@ -76,16 +76,15 @@ class DashboardController extends Controller
     {
         $request->validate([
             'title' => ['required'],
-            'long' => ['required'],
             'lat' => ['required'],
+            'lon' => ['required'],
         ]);
 
-        $map = new MapÒ;
+        $map = new Map;
 
         $map->title = $request->input('title');
-        $map->description = $request->input('lon');
-        $map->autonomie = $request->input('lat');
-        
+        $map->lat = $request->input('lat');
+        $map->lon = $request->input('lon');        
         $map->save();
 
         return back()->withInfo('Map create');
