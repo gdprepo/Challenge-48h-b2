@@ -20,7 +20,7 @@
     <div class="background">
         <div style=" margin-left:5%; margin-top:-20%">
             <h1>Bienvenue sur SKAEL</h1>
-            <p>Nous vous proposons des Skate electrique <br/>partout dans bordeaux</p>
+            <p>Nous proposons des Skate electrique <br/>partout dans Bordeaux</p>
             <a  href="/Information">En savoir plus</a>
         </div>
     </div>
