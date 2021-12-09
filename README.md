@@ -25,7 +25,7 @@ lien du github : https://github.com/wewlr17/Challenge-48h-b2
 > 
 > Creer un user et password mysql.
 >
-> Entrer les donnée dans la fichier .env et database.php
+> Entrer les données dans le fichier .env et database.php
 >
 > Ensuite lancer le commande :
 >
